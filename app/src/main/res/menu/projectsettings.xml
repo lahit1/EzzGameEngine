@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/psRemove"
+        android:title="@string/remove_project"/>
+    
+	<item
+		android:id="@+id/psPublish"
+		android:title="@string/publish_project"/>
+</menu>

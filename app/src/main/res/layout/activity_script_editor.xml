@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#eeeeee">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="50dp"
+		android:orientation="vertical"
+		android:background="#7777ff">
+
+		<ImageButton
+			android:id="@+id/script_editorBackBut"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:scaleType="fitCenter"
+			android:gravity="center"
+			android:src="@drawable/ic_back"/>
+
+		<ImageButton
+			android:id="@+id/script_editorSaveBut"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:scaleType="fitCenter"
+			android:gravity="center"
+			android:src="@drawable/ic_save"/>
+
+	</LinearLayout>
+	
+	<ScrollView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="35dp"
+				android:layout_height="match_parent"
+				android:textSize="15dp"
+				android:padding="5dp"
+				android:id="@+id/script_editorLineNums"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="top"
+				android:imeOptions="flagNoExtractUi"
+				android:textSize="15dp"
+				android:padding="5dp"
+				android:background="#0000"
+				android:id="@+id/script_editorEditText"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

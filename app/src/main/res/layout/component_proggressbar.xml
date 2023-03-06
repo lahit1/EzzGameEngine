@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Proggressbar"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_marginBottom="9dp"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Max"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:layout_weight="1"
+            android:id="@+id/proggressbarMax"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/proggress"
+            android:textStyle="bold"
+			android:id="@+id/string_proggress"/>
+
+        <EditText
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:layout_weight="1"
+            android:id="@+id/proggressbarCurr"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/background_color"
+        android:textStyle="bold"
+		android:id="@+id/string_pbBColor"/>
+
+    <View
+        android:layout_height="25dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/proggressbarBC"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/proggress_color"
+        android:textStyle="bold"
+		android:id="@+id/string_proggressColor"/>
+
+    <View
+        android:layout_height="25dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/proggressbarC"/>
+</LinearLayout>
+

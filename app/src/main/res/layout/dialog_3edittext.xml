@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="350dp"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical|center_horizontal"
+	android:radius="25dp">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/sedTitle"/>
+	
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:id="@+id/sedEditText1"
+		android:singleLine="true"/>
+	
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:id="@+id/sedEditText2"
+		android:singleLine="true"/>
+	
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:id="@+id/sedEditText3"
+		android:singleLine="true"/>
+		
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:background="#dddddd"
+		android:id="@+id/sedButton1"/>
+
+</LinearLayout>
+

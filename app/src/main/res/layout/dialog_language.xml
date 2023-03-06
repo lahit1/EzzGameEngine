@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/backL"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:background="#fff">
+        
+        <LinearLayout
+            android:id="@+id/lg_tr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+            
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+            
+            <TextView
+                android:id="@+id/tr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#263238"
+                android:text="Türkçe"/>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lg_en"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/en"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#263238"
+                android:text="English"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lg_pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#263238"
+                android:text="Portugal"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lg_hi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/hi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#263238"
+                android:text="हिन्दी"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lg_ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/ar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#263238"
+                android:text="إلى السيارة"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

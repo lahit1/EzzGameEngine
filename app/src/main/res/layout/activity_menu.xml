@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:id="@+id/bar"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="#7777ff">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:layout_weight="1">
+			
+			<LinearLayout
+				android:layout_width="5dp"
+				android:layout_height="match_parent"/>
+			
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:scaleType="fitXY"
+				android:src="@drawable/app_icon"/>
+			
+			<LinearLayout
+				android:layout_width="3dp"
+				android:layout_height="match_parent"/>
+			
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="16sp"
+					android:text="Ezz Game Engine"
+					android:textStyle="bold"
+					android:textColor="#FF000000"/>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:text="Versiyon: BETA 1.0"
+					android:textStyle="normal"
+					android:textColor="#FF000000"/>
+				
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="right|center_vertical">
+			
+			<ImageView
+				android:id="@+id/menuSettings"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:src="@drawable/ic_settings"
+				android:scaleType="fitXY"/>
+			
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+            
+            <ImageView
+                android:id="@+id/menuAccount"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_account"
+				android:scaleType="fitXY"/>
+            
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+            
+		</LinearLayout>
+		
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+			
+			<ListView
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:id="@+id/menuProjects"/>
+			
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="150dp"
+			android:layout_height="match_parent"
+			android:gravity="right"
+			android:orientation="vertical">
+		
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_width="150dp"
+				android:orientation="vertical"
+				android:gravity="center_horizontal">
+
+				<Button
+					android:layout_height="wrap_content"
+					android:layout_width="110dp"
+					android:backgroundTint="#FF5F61FD"
+					android:textColor="#Ffffffff"
+					android:text="@string/New_Project"
+					android:id="@+id/menuNewProject"/>
+
+				
+				
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/othersLink"
+				android:layout_width="140dp"
+				android:layout_height="50dp"
+				android:elevation="5dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:background="#FFFFFFFF"
+				android:rotation="0">
+				
+				<ImageView
+					android:id="@+id/menuDiscord"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:scaleType="fitXY"
+					android:src="@drawable/ic_discord"/>
+				
+				<LinearLayout
+					android:layout_width="5dp"
+					android:layout_height="match_parent"/>
+				
+				<ImageView
+					android:id="@+id/menuYoutube"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:scaleType="fitXY"
+					android:src="@drawable/ic_youtube"/>
+					
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="top"
+    android:orientation="vertical"
+    android:background="#aa9999">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:id="@+id/editorAddEntity"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_add">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:clickable="false"
+            android:text="@string/add_entity"
+            android:translationX="35dp"
+            android:textColor="#000000"
+			android:id="@+id/string_addEntity">
+
+        </TextView>
+
+    </FrameLayout>
+
+    <ListView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/editorEntities"
+		android:layout_marginBottom="25dp"/>
+
+</LinearLayout>
+

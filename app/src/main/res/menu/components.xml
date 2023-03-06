@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="15dp">
+
+	<item
+		android:id="@+id/cmLuaScript"
+		android:title="Lua Script"
+		android:icon="@drawable/ic_script"/>
+
+    <item
+        android:id="@+id/cmTexture"
+        android:title="Texture"
+		android:icon="@drawable/ic_texture"/>
+	<item
+		android:id="@+id/cmAnimation"
+		android:title="Animation"
+		android:icon="@drawable/ic_animation"/>
+	<item
+		android:id="@+id/cmFont"
+		android:title="Font"
+		android:icon="@drawable/ic_font"/>
+	<item
+		android:id="@+id/cmButton"
+		android:title="Button"
+		android:icon="@drawable/ic_button"/>
+	<item
+		android:id="@+id/cmSwitch"
+		android:title="Switch"
+		android:icon="@drawable/ic_switch"/>
+	<item
+		android:id="@+id/cmProgressBar"
+		android:title="Proggress Bar"
+		android:icon="@drawable/ic_progressbar"/>
+
+	<item
+		android:id="@+id/cmJoystick"
+		android:title="Joystick"
+		android:icon="@drawable/ic_joystick"/>
+
+	<item
+		android:id="@+id/cmMusicPlayer"
+		android:title="Music Player"
+		android:icon="@drawable/ic_music"/>
+</menu>

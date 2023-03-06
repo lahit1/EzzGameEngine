@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/editorSpace"
+        android:background="#fff">
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="200dp"
+		android:orientation="horizontal"
+		android:translationX="-200dp"
+		android:translationY="30dp"
+		android:id="@+id/editorLeftDrawer"
+		android:paddingBottom="25dp"/>
+
+	<TextView
+		android:layout_width="100dp"
+		android:layout_height="match_parent"
+		android:textColor="#000"
+		android:id="@+id/editorFPS"/>
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:translationY="25dp"
+        android:orientation="vertical"
+        android:background="#ccccdd">
+
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="30dp"
+            android:src="@drawable/ic_entities"
+            android:background="#aa9999"
+            android:id="@+id/editorEntitiesOpen"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="30dp"
+            android:src="@drawable/ic_options"
+            android:background="#9999bb"
+            android:id="@+id/editorSettingsOpen"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"/>
+
+		<ImageView
+            android:layout_height="75dp"
+            android:layout_width="30dp"
+            android:src="@drawable/ic_camera"
+            android:background="#aabbaa"
+            android:id="@+id/editorCamSetsOpen"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="200dp"
+		android:orientation="horizontal"
+		android:background="#00000000"
+		android:translationY="30dp"
+		android:id="@+id/editorRightDrawer"
+		android:paddingBottom="25dp">
+
+		<ImageView
+            android:layout_height="60dp"
+            android:layout_width="25dp"
+            android:src="@drawable/ic_handle"
+            android:background="#bbbbcc"
+            android:id="@+id/editorRightDrawerOpen"
+            android:layout_gravity="center"/>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="175dp"
+			android:background="#bbbbcc"
+			android:layout_gravity="top"
+			android:orientation="vertical"
+			android:paddingLeft="5dp"
+			android:clickable="true">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_height="40dp"
+					android:layout_width="wrap_content"
+					android:text="ID"
+					android:textSize="15sp"/>
+
+				<EditText
+					android:imeOptions="flagNoExtractUi|actionDone"
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:singleLine="true"
+					android:textSize="15sp"
+					android:id="@+id/editorID"/>
+
+			</LinearLayout>
+
+			<CheckBox
+				android:layout_width="match_parent"
+				android:layout_height="20dp"
+				android:textSize="12sp"
+				android:text="UI"
+				android:id="@+id/editorUIb"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="#000000"
+				android:layout_marginTop="4dp"
+				android:layout_marginBottom="10dp"/>
+
+			<FrameLayout
+				android:layout_width="fill_parent"
+				android:layout_height="40dp">
+
+				<ImageButton
+					android:id="@+id/editorAddComponent"
+					android:layout_width="fill_parent"
+					android:layout_height="40dp"
+					android:scaleType="fitStart"
+					android:src="@drawable/ic_add">
+
+				</ImageButton>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:gravity="center"
+					android:clickable="false"
+					android:text="@string/add_component"
+					android:translationX="35dp"
+					android:textColor="#000000"
+					android:id="@+id/string_addComponent">
+
+				</TextView>
+
+			</FrameLayout>
+
+			<ListView
+				android:layout_height="wrap_content"
+				android:layout_width="170dp"
+				android:layout_weight="1"
+				android:id="@+id/editorComponents"
+				android:dividerHeight="1dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="200dp"
+		android:orientation="horizontal"
+		android:background="#00000000"
+		android:translationY="30dp"
+		android:id="@+id/editorCEADrawer"
+		android:paddingBottom="25dp"
+		android:clickable="true">
+
+		<ImageView
+			android:layout_height="60dp"
+			android:layout_width="25dp"
+			android:src="@drawable/ic_cross"
+			android:background="#bbbbcc"
+			android:id="@+id/editorCEAClose"
+			android:layout_gravity="center_vertical"/>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="175dp"
+			android:background="#bbbbcc"
+			android:layout_gravity="top"
+			android:orientation="vertical"
+			android:paddingLeft="5dp"
+			android:id="@+id/editorCEA"
+			android:padding="10dp">
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="210dp"
+		android:orientation="vertical"
+		android:background="#00000000"
+		android:id="@+id/editorBottomDrawer"
+		android:clickable="true">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:orientation="horizontal"
+			android:background="#00000000"
+			android:paddingLeft="80dp">
+
+			<TextView
+				android:layout_width="75dp"
+				android:layout_height="30dp"
+				android:text="@string/files"
+				android:textColor="#ffffff"
+				android:textStyle="bold"
+				android:gravity="center"
+				android:background="#ff7777"
+				android:layout_marginRight="5dp"
+                android:id="@+id/editorFilesOpen"/>
+
+			<TextView
+				android:layout_width="75dp"
+				android:layout_height="30dp"
+				android:text="@string/output"
+				android:textColor="#ffffff"
+				android:textStyle="bold"
+				android:gravity="center"
+				android:background="#7777ff"
+                android:id="@+id/editorOutputOpen"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="180dp"
+			android:id="@+id/editorBE"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="30dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:background="#7777ff"
+		android:paddingRight="10dp"
+		android:gravity="center_vertical"
+		android:clickable="true">
+
+		<ImageView
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:src="@drawable/ic_tb_back"
+			android:id="@+id/editorBack"
+			android:layout_marginRight="10dp"/>
+
+		<ImageView
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:src="@drawable/ic_play"
+			android:id="@+id/editorEnvPP"
+			android:layout_marginRight="5dp"/>
+
+		<ImageView
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:src="@drawable/ic_stop"
+			android:alpha="0.5"
+			android:id="@+id/editorEnvS"
+			android:layout_marginRight="10dp"/>
+
+		<ImageView
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:src="@drawable/ic_fullscreen"
+			android:id="@+id/editorEnvFS"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="25dp"
+			android:gravity="right">
+
+			<ImageView
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:src="@drawable/ic_focus_entity"
+				android:id="@+id/editorToolFocusEntity"
+				android:layout_marginRight="5dp"/>
+
+			<ImageView
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:src="@drawable/ic_focus_center"
+				android:id="@+id/editorToolFocusCenter"
+				android:layout_marginRight="15dp"/>
+
+			<ImageView
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:src="@drawable/ic_save"
+				android:id="@+id/editorSave"
+				android:layout_marginRight="10dp"/>
+
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>
+

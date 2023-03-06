@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "501314899499",
+    "firebase_url": "https://ezzgameengine-default-rtdb.firebaseio.com",
+    "project_id": "ezzgameengine",
+    "storage_bucket": "ezzgameengine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501314899499:android:4ea4fa2ed295014163a46e",
+        "android_client_info": {
+          "package_name": "tm.Ezz.Game.Engine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501314899499-j8mud1kiqk4s79tpjuteh9cg8boiao8m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tm.Ezz.Game.Engine",
+            "certificate_hash": "61ed377e85d386a8dfee6b864bd85b0bfaa5af81"
+          }
+        },
+        {
+          "client_id": "501314899499-24fks0mo0nrlk4jujkedl1d2dj7l25pl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcrzu6ST2bJTCJWHnswuX0vj1miGMHrpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501314899499-24fks0mo0nrlk4jujkedl1d2dj7l25pl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

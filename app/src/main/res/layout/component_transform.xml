@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="Transform"
+		android:textStyle="bold"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="#000000"
+		android:layout_marginBottom="9dp"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="@string/position"
+		android:textStyle="bold"
+		android:id="@+id/string_trPosition"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="X"/>
+
+		<EditText
+			android:imeOptions="flagNoExtractUi|actionDone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:inputType="numberDecimal|numberSigned"
+			android:layout_weight="1"
+			android:text="1"
+			android:id="@+id/transform_posX"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Y"/>
+
+		<EditText
+			android:imeOptions="flagNoExtractUi|actionDone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:inputType="numberDecimal|numberSigned"
+			android:layout_weight="1"
+			android:text="1"
+			android:id="@+id/transform_posY"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="@string/size"
+		android:textStyle="bold"
+		android:id="@+id/string_trSize"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="X"/>
+
+		<EditText
+			android:imeOptions="flagNoExtractUi|actionDone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:inputType="numberDecimal|numberSigned"
+			android:layout_weight="1"
+			android:id="@+id/transform_sizeX"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Y"/>
+
+		<EditText
+			android:imeOptions="flagNoExtractUi|actionDone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:inputType="numberDecimal|numberSigned"
+			android:layout_weight="1"
+			android:id="@+id/transform_sizeY"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="@string/rotation"
+			android:textStyle="bold"
+			android:id="@+id/string_trRotation"/>
+
+		<EditText
+			android:imeOptions="flagNoExtractUi|actionDone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:inputType="numberDecimal|numberSigned"
+			android:layout_weight="1"
+			android:id="@+id/transform_rotation"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

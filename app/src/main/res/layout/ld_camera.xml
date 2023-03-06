@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="top"
+    android:orientation="vertical"
+    android:background="#aabbaa"
+	android:paddingHorizontal="5dp"
+	android:clickable="true">
+	
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="@string/gravity"
+		android:textStyle="bold"
+		android:id="@+id/string_camSPos"/>
+	
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="X"/>
+
+		<EditText
+			android:imeOptions="flagNoExtractUi|actionDone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:inputType="numberDecimal|numberSigned"
+			android:layout_weight="1"
+			android:text="1"
+			android:id="@+id/ldc_pX"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Y"/>
+
+		<EditText
+			android:imeOptions="flagNoExtractUi|actionDone"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:inputType="numberDecimal|numberSigned"
+			android:layout_weight="1"
+			android:text="1"
+			android:id="@+id/ldc_pY"/>
+
+	</LinearLayout>
+	
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="@string/follow_entity"
+		android:textStyle="bold"
+		android:id="@+id/string_camFEnt"/>
+	
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/ldc_fnent"/>
+
+</LinearLayout>
+

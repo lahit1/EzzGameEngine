@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:id="@+id/nfEdt1"/>
+	
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/nfSpn1"/>
+	
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#dddddd"
+		android:id="@+id/nfSmb"/>
+	
+</LinearLayout>
