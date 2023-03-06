@@ -10,3 +10,6 @@ Naif Can Başçı
 <a href="https://github.com/lahit1/EzzGameEngine/blob/master/SECURITY.md" target="_blank">Security Policy</a>
 
 <a href="https://discord.gg/aB6eYvDYF8" target="_blank">Discord</a><br/>
+
+
+# <a href="https://github.com/lahit1/EzzGameEngine-Old" target="_blank">Old Library Repository</a>
