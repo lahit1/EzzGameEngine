@@ -1,6 +1,6 @@
 A simple and powerful Framework for game development on Android devices.
 
-# Owner <br/>
+# Developer <br/>
 Naif Can Başçı
 
 # Credits<br/>
